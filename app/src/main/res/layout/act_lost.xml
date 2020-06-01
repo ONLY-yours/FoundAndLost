@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LostActivity">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="失物招领(LOST)"
+        android:textColor="#696969"
+        android:textSize="30dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#56606060"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"/>
+
+    <View
+        android:id="@+id/view_search"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/circle_white"
+        app:layout_constraintLeft_toLeftOf="@id/view1"
+        app:layout_constraintRight_toRightOf="@id/view1"
+        app:layout_constraintTop_toTopOf="@id/view1"
+        app:layout_constraintBottom_toBottomOf="@id/view1"/>
+
+
+    <ImageView
+        android:id="@+id/iv_search"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/ic_search_"
+        app:layout_constraintLeft_toLeftOf="@id/view_search"
+        app:layout_constraintTop_toTopOf="@id/view_search"
+        app:layout_constraintBottom_toBottomOf="@id/view_search"/>
+
+    <EditText
+        android:id="@+id/et_search"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        app:layout_constraintLeft_toRightOf="@id/iv_search"
+        app:layout_constraintTop_toTopOf="@id/view_search"
+        app:layout_constraintRight_toRightOf="@id/view_search"
+        app:layout_constraintBottom_toBottomOf="@id/view_search"
+        android:textSize="16dp"
+        android:hint="点击此处进行关键字搜索"
+        android:background="#fff"/>
+
+    <View
+        android:id="@+id/btn_search"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:background="@null"
+        app:layout_constraintLeft_toRightOf="@id/view_search"
+        app:layout_constraintTop_toTopOf="@id/view_search"
+        app:layout_constraintBottom_toBottomOf="@id/view_search"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textSize="16dp"
+        android:text="点击搜索"
+        android:gravity="center"
+        android:textColor="#E20367F4"
+        app:layout_constraintLeft_toLeftOf="@id/btn_search"
+        app:layout_constraintRight_toRightOf="@id/btn_search"
+        app:layout_constraintTop_toTopOf="@id/btn_search"
+        app:layout_constraintBottom_toBottomOf="@id/btn_search"/>
+
+    <ImageView
+        android:id="@+id/iv_tvclear"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginRight="9dp"
+        android:src="@drawable/ic_highlight"
+        app:layout_constraintRight_toRightOf="@id/view_search"
+        app:layout_constraintTop_toTopOf="@id/view_search"
+        app:layout_constraintBottom_toBottomOf="@id/view_search"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:background="@null"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view1"
+        app:layout_constraintBottom_toTopOf="@id/btn_lost"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_lost"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="5dp"
+        android:textSize="16sp"
+        android:text="LOST"
+        android:background="@drawable/circle_white"
+        app:layout_constraintRight_toLeftOf="@id/btn_found"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+    <Button
+        android:id="@+id/btn_found"
+        android:layout_width="0dp"
+        android:background="@drawable/circle_white"
+        android:layout_margin="5dp"
+        android:layout_height="60dp"
+        android:text="FOUND"
+        app:layout_constraintLeft_toRightOf="@id/btn_lost"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

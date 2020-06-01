@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="118dp"
+    android:background="@drawable/circle_white"
+    android:layout_marginTop="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:id="@+id/view_detial"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="130dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="89dp"
+        android:layout_height="82dp"
+        android:layout_marginLeft="14dp"
+        android:background="@drawable/time"
+        android:visibility="invisible"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv_img1"
+        android:layout_width="89dp"
+        android:layout_height="82dp"
+        android:layout_marginLeft="14dp"
+        android:visibility="invisible"
+        android:background="@drawable/key"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv_img2"
+        android:layout_width="89dp"
+        android:layout_height="82dp"
+        android:layout_marginLeft="14dp"
+        android:visibility="invisible"
+        android:background="@drawable/cloth"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv_img3"
+        android:layout_width="89dp"
+        android:layout_height="82dp"
+        android:layout_marginLeft="14dp"
+        android:visibility="invisible"
+        android:background="@drawable/card"
+        android:scaleType="fitXY"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvdescribe1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="灰色手表"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintTop_toTopOf="@id/iv_img"
+        app:layout_constraintLeft_toRightOf="@id/iv_img"
+        android:textSize="18sp"
+        android:textColor="#101010"/>
+
+    <TextView
+        android:id="@+id/tvdescribe2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="详细描述： 于下午丢失于操场，\n请有缘人捡到归还，谢谢！"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintTop_toTopOf="@id/iv_img"
+        app:layout_constraintLeft_toRightOf="@id/iv_img"
+        android:textSize="12sp"
+        android:textColor="#ACACAC"/>
+
+    <TextView
+        android:id="@+id/tvdescribe3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="时间：5月30日 18：30"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintTop_toTopOf="@id/iv_img"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="10sp"
+        android:textColor="#1D0000"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
